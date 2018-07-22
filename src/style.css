@@ -11,18 +11,16 @@ header {
   background: #f1c40f;
 }
 main {
-  background: #2ecc71;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
 }
 .input__todo {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-column: span 2;
-  border: 1px solid black;
   padding: 10px;
-  margin: 3px;
 }
 .todo__header {
   font-size: 18px;
@@ -31,6 +29,8 @@ main {
   align-items: center;
   justify-content: center;
 }
-.uncom__title,
-.com__title {
+.uncompleted,
+.completed,
+.input__todo {
+  background: #2ecc71;
 }
