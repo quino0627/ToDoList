@@ -3,18 +3,45 @@ body {
   padding: 0;
   margin: 0;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh;
+  grid-template-rows: 80px;
   grid-gap: 3px;
+  background: #ebebeb;
 }
 
 header {
-  background: #f1c40f;
+  background: #740325;
 }
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3px;
 }
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+.text__input {
+  width: 400px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.plus__image {
+  height: 30px;
+  width: 30px;
+  padding: 0 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.plus__image:hover {
+  transform: rotateY(0.5turn);
+}
+
 .input__todo {
   display: flex;
   align-items: center;
@@ -23,14 +50,27 @@ main {
   padding: 10px;
 }
 .todo__header {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 .uncompleted,
 .completed,
 .input__todo {
-  background: #2ecc71;
+  background: #ffffff;
+}
+
+.header__title {
+  color: #ebebeb;
+}
+
+.js-edit {
+  margin-left: 10px;
+}
+
+.title {
+  margin: 10px 20px;
 }
