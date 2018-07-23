@@ -71,6 +71,7 @@ ul {
   margin-left: 10px;
 }
 
-.title {
-  margin: 10px 20px;
+.uncompleted,
+.completed {
+  padding: 10px 20px;
 }
